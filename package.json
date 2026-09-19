@@ -1,18 +1,22 @@
 {
-  "name": "smart-city-digital-twin-monorepo",
+  "name": "smart-city-frontend",
+  "private": true,
   "version": "1.0.0",
-  "description": "AI Smart City Digital Twin – Intelligent Road Closure Simulation and Traffic Impact Analysis",
+  "type": "module",
   "scripts": {
-    "install:all": "cd backend && npm install && cd ../frontend && npm install",
-    "start:backend": "cd backend && npm start",
-    "start:frontend": "cd frontend && npm run dev"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "digital-twin",
-    "smart-city",
-    "traffic-simulation",
-    "dijkstra",
-    "ai-agent",
-    "multilingual"
-  ]
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.6"
+  }
 }
